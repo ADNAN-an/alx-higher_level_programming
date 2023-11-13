@@ -1,7 +1,8 @@
 #!/usr/bin/node
 
-if (process.argv[2] && process.argv[3]) {
-  console.log(process.argv[2] + " is " + process.argv[3]);
-} else {
-  console.log('No argument');
-}
+const myVar1 = process.argv[2];
+const myVar2 = process.argv[3];
+
+const result = `${myVar1} is ${myVar2}`;
+
+console.log(result);
